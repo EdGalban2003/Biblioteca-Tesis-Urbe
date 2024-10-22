@@ -1,0 +1,47 @@
+/* Contenedor con el área de desplazamiento */
+.scroll-box {
+    position: relative;
+    background-color: #ffffff;
+    
+}
+
+/* Personalizar el scrollbar */
+.scroll-box::-webkit-scrollbar {
+    width: 8px;
+}
+
+.scroll-box::-webkit-scrollbar-thumb {
+    background-color: #3F51B5;
+    border-radius: 10px;
+}
+
+.scroll-box::-webkit-scrollbar-thumb:hover {
+    background-color: #303F9F;
+}
+
+.scroll-box::-webkit-scrollbar-track {
+    background-color: rgba(128, 128, 128, 0.137);
+    border-radius: 10px;
+}
+
+.scroll-box::-webkit-scrollbar-button {
+    width: 0;
+    height: 0;
+    display: none;
+}
+
+/* Scrollbar visible solo en pantallas grandes */
+@media screen and (min-width: 768px) {
+    .scroll-box {
+        right: 55px;
+        height: 500px;
+        overflow-y: auto; 
+    }
+}
+
+/* Scrollbar visible solo en pantallas grandes */
+@media screen and (max-width: 767px) {
+    .scroll-box {
+        overflow-y: hidden; 
+    }
+}

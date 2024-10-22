@@ -1,0 +1,41 @@
+@media screen and (min-width: 768px) {
+    .custom-button {
+        width: 145px;
+        height: 46px;
+        border-radius: 7px !important;
+        border-color: #000000 !important;
+        color: #000 !important;
+    }
+
+    .material-symbols-outlined {
+        font-size: 20px; 
+        margin-right: 5px;
+        transform: translateY(4px);
+    }
+
+    .custom-text {
+        line-height: 2; 
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .custom-button {
+        width: 300px;
+        height: 46px;
+        border-radius: 7px !important;
+        border-color: #000000 !important;
+        color: #000 !important;
+    }
+
+    .material-symbols-outlined {
+        font-size: 20px; 
+        margin-right: 5px;
+        transform: translateY(4px);
+    }
+
+    .custom-text {
+        line-height: 2; 
+        font-size: 14px;
+    }
+}

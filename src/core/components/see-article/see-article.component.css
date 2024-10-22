@@ -1,0 +1,290 @@
+/* Ajuste de la separación de los botones y otros estilos */
+
+.goback {
+  margin-left: 30px;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.custom-button-goback {
+  font-family: Poppins, sans-serif !important;
+  width: 60px !important;
+  height: 60px !important;
+  border-radius: 100% !important;
+  border-color: #d9d9d9 !important;
+  color: #ffffff !important;
+  background-color: #3f51b5 !important;
+}
+
+.arrow {
+  font-size: 35px;
+  margin-top: -5px;
+}
+
+.goback-text {
+  font-family: Poppins, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #3f51b5;
+  cursor: pointer;
+}
+
+/* Container for Article */
+.container-article {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Ajuste para pantallas medianas y grandes */
+@media screen and (min-width: 768px) {
+  .container-article {
+    width: 80%;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+
+/* Ajuste para pantallas medianas y grandes */
+@media screen and (max-width: 767px) {
+  .container-article {
+    width: 85%;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+
+/* Container for Article Image */
+.container-article-image {
+  margin-top: 4%;
+  position: relative;
+  display: inline-block;
+}
+
+/* Imagen en pantallas normales */
+@media screen and (max-width: 768px) {
+  .container-article-image img {
+    max-width: 304px;
+    height: 424px;
+    align-items: center;
+  }
+}
+
+/* Imagen en pantallas más pequeñas */
+@media screen and (max-width: 767px) {
+  .container-article-image img {
+    max-width: 304px;
+    height: 400px;
+    align-items: center;
+  }
+}
+
+/* Estilo para la etiqueta (indicador) */
+.identificador {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  background-color: #a00000;
+  color: #fff;
+  padding: 10px 45px 10px 20px;
+  font-family: Poppins, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  clip-path: polygon(0% 0%, 80% 0%, 100% 50%, 80% 100%, 0% 100%);
+  margin: 0;
+}
+
+/* Ajuste adicional para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+  .identificador {
+    top: 50px;
+    left: 0;
+    font-size: 14px;
+  }
+}
+
+/* Article Content */
+.article-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: auto;
+  gap: 20px;
+  max-width: 650px;
+}
+
+/* Article Title */
+.article-title-text {
+  font-family: Poppins, sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 1.2;
+  margin-bottom: 5px;
+}
+
+@media screen and (max-width: 1024px) {
+  .article-title-text {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .article-title-text {
+    font-size: 15px;
+  }
+}
+
+/* Texto de autores, tutores y palabras clave */
+.article-inf-text,
+.article-inf-title {
+  margin: 0;
+  color: rgba(92, 92, 92, 1);
+  font-family: Poppins, sans-serif !important;
+  font-size: 16px;
+}
+
+/* Ajuste del texto de información según el tamaño de la pantalla */
+@media screen and (max-width: 1024px) {
+  .article-inf-text,
+  .article-inf-title {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .article-inf-text,
+  .article-inf-title {
+    font-size: 14px;
+  }
+}
+
+/* Botones Ver más y Guardar */
+.custom-button-seemore,
+.custom-button-pdf {
+  font-size: 16;
+  padding: 8px 16px;
+}
+
+@media screen and (max-width: 1024px) {
+  .custom-button-seemore,
+  .custom-button-pdf {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .custom-button-seemore,
+  .custom-button-pdf {
+    font-size: 14px;
+  }
+}
+
+/* Container for Other Buttons */
+.save-button {
+  margin-top: 20px;
+}
+
+/* Botones PDF */
+.custom-button-pdf {
+  font-family: Poppins, sans-serif !important;
+  border-radius: 7px !important;
+  font-size: 13px;
+  color: black !important;
+  border-color: #d9d9d9 !important;
+}
+
+/* Vista en pantallas grandes: 4 botones por fila y luego 2 por fila */
+@media screen and (min-width: 768px) {
+  .container-download-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: flex-start;
+  }
+
+  .custom-button-pdf {
+    width: 160px;
+    flex: 1 1 100%;
+  }
+}
+
+/* Vista en pantallas pequeñas: 2 botones por fila */
+@media screen and (max-width: 767px) {
+  .container-download-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .custom-button-pdf {
+    flex: 1 1 calc(50% - 15px);
+  }
+}
+
+/* Ajuste de la separación de los botones y otros estilos */
+.custom-button-seemore {
+  font-family: Poppins, sans-serif !important;
+  width: 180px !important;
+  height: 48px !important;
+  border-radius: 7px !important;
+  border-color: #d9d9d9 !important;
+  color: #ffffff !important;
+  background-color: #3f51b5 !important;
+  font-size: 16px !important;
+}
+
+.material-symbols-outlined {
+  transform: translateY(6px) !important;
+}
+
+/* Article Information Container */
+.article-inf {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  max-width: 700px;
+}
+
+.info-item {
+  display: flex;
+  justify-content: flex-start;
+  gap: 5px;
+}
+
+/* Centrado del contenido en pantallas pequeñas */
+@media screen and (max-width: 768px) {
+  .container-article,
+  .container-article-image,
+  .article-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .article-inf {
+    width: 100%;
+  }
+}
+
+/* Apartado de Botones de descarga */
+@media screen and (min-width: 768px) {
+  .downloads {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 60px;
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .downloads {
+    margin-top: 40px;
+    font-size: 11px;
+  }
+}

@@ -1,0 +1,44 @@
+.info-icon {
+  font-size: 50px;
+  height: auto;
+  width: auto;
+  color: #001e44;
+}
+
+div {
+  min-height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: 1rem auto;
+}
+
+p,
+strong {
+  text-align: center;
+  color: gray;
+  font-size: .7rem;
+  margin: 0;
+}
+
+@media screen and (min-width: 679px) {
+  .info-icon {
+    font-size: 80px;
+  }
+  p,
+  strong {
+    font-size: .8rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .info-icon {
+    font-size: 100px;
+  }
+  p,
+  strong {
+    font-size: .9rem;
+  }
+}
